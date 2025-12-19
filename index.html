@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="theme-color" content="#3498db">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="apple-mobile-web-app-title" content="상담카드관리">
+    <title>고객 상담 카드 관리 시스템</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>고객 상담 카드 관리 시스템</h1>
+            <div class="nav-buttons">
+                <button id="uploadBtn" class="btn btn-primary">📤 업로드</button>
+                <button id="searchBtn" class="btn btn-secondary">🔍 검색</button>
+                <button id="syncBtn" class="btn btn-secondary">🔄 동기화</button>
+                <button id="githubConfigBtn" class="btn btn-secondary">⚙️ GitHub 설정</button>
+            </div>
+        </header>
+
+        <!-- 업로드 섹션 -->
+        <section id="uploadSection" class="section">
+            <h2>상담 카드 업로드</h2>
+            <form id="uploadForm" class="upload-form">
+                <div class="form-group">
+                    <label for="salesperson">판매자명:</label>
+                    <select id="salesperson" name="salesperson" required>
+                        <option value="">판매자를 선택하세요</option>
+                        <option value="이호만 점장">이호만 점장</option>
+                        <option value="김승진 실장">김승진 실장</option>
+                        <option value="오희정 실장">오희정 실장</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="customerName">고객명:</label>
+                    <input type="text" id="customerName" name="customerName" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="consultationDate">상담 날짜:</label>
+                    <input type="date" id="consultationDate" name="consultationDate" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="cardImage">상담 카드 이미지 (JPG):</label>
+                    <input type="file" id="cardImage" name="cardImage" accept=".jpg,.jpeg,image/jpeg" capture="environment" required>
+                    <div class="file-info">JPG 파일만 업로드 가능합니다. 카메라로 직접 촬영도 가능합니다.</div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="notes">메모 (선택사항):</label>
+                    <textarea id="notes" name="notes" rows="3" placeholder="상담 내용 요약이나 특이사항을 입력하세요"></textarea>
+                </div>
+                
+                <div class="form-group">
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="purchaseCompleted" name="purchaseCompleted">
+                        <label for="purchaseCompleted" class="checkbox-label">
+                            <span class="checkbox-icon">✅</span>
+                            구매 완료
+                        </label>
+                    </div>
+                </div>
+                
+                <button type="submit" class="btn btn-primary">📤 업로드 하기</button>
+            </form>
+        </section>
+
+        <!-- 검색 섹션 -->
+        <section id="searchSection" class="section hidden">
+            <h2>상담 카드 검색</h2>
+            <div class="search-form">
+                <div class="search-group">
+                    <div class="input-with-icon">
+                        <span class="input-icon">👤</span>
+                        <input type="text" id="searchCustomer" placeholder="고객명으로 검색" autocomplete="off">
+                    </div>
+                    <button id="searchExecute" class="btn btn-primary">🔍 검색</button>
+                </div>
+                
+                <div class="filter-section">
+                    <h3 class="filter-title">🔽 상세 필터</h3>
+                    
+                    <div class="filter-group">
+                        <div class="filter-item">
+                            <label class="filter-label">👨‍💼 판매자</label>
+                            <select id="salespersonFilter" class="filter-select">
+                                <option value="">전체 판매자</option>
+                            </select>
+                        </div>
+                        
+                        <div class="filter-item">
+                            <label class="filter-label">📅 기간 설정</label>
+                            <div class="date-range">
+                                <div class="date-input-wrapper">
+                                    <span class="date-label">시작</span>
+                                    <input type="date" id="dateFrom" class="date-input">
+                                </div>
+                                <span class="date-separator">~</span>
+                                <div class="date-input-wrapper">
+                                    <span class="date-label">종료</span>
+                                    <input type="date" id="dateTo" class="date-input">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="quick-filters">
+                        <h4 class="quick-filter-title">📅 기간 필터</h4>
+                        <div class="quick-filter-buttons">
+                            <button class="quick-filter-btn" data-period="week">금주</button>
+                            <button class="quick-filter-btn" data-period="month">당월</button>
+                            <button class="quick-filter-btn" data-period="lastMonth">지난 달</button>
+                            <button class="quick-filter-btn" data-period="all">전체</button>
+                        </div>
+                    </div>
+                    
+                    <div class="quick-filters">
+                        <h4 class="quick-filter-title">👨‍💼 판매자 필터</h4>
+                        <div class="salesperson-filter-buttons">
+                            <button class="salesperson-filter-btn" data-salesperson="">전체</button>
+                            <button class="salesperson-filter-btn" data-salesperson="이호만 점장">이호만 점장</button>
+                            <button class="salesperson-filter-btn" data-salesperson="김승진 실장">김승진 실장</button>
+                            <button class="salesperson-filter-btn" data-salesperson="오희정 실장">오희정 실장</button>
+                        </div>
+                    </div>
+                    
+                    <div class="quick-filters">
+                        <h4 class="quick-filter-title">🛒 구매 상태 필터</h4>
+                        <div class="purchase-filter-buttons">
+                            <button class="purchase-filter-btn" data-status="">전체</button>
+                            <button class="purchase-filter-btn" data-status="completed">구매완료</button>
+                            <button class="purchase-filter-btn" data-status="pending">상담중</button>
+                        </div>
+                    </div>
+                    
+                    <div class="filter-actions">
+                        <button id="filterBtn" class="btn btn-primary btn-filter">✓ 필터 적용</button>
+                        <button id="resetFilterBtn" class="btn btn-secondary btn-filter">↺ 초기화</button>
+                    </div>
+                </div>
+            </div>
+            
+            <div id="searchResults" class="search-results"></div>
+        </section>
+    </div>
+
+    <!-- 이미지 모달 -->
+    <div id="imageModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <img id="modalImage" src="" alt="상담 카드">
+            <div id="modalInfo" class="modal-info"></div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

@@ -1,1 +1,20 @@
-[]
+[
+  {
+    "id": "1766138101134",
+    "salesperson": "이호만 점장",
+    "customerName": "이수정",
+    "consultationDate": "2025-12-19",
+    "notes": "",
+    "purchaseCompleted": false,
+    "imageData": "https://ysace0077.github.io/customer_card/images/20251219_이호만_점장_이수정_1766138101134.jpg",
+    "imagePath": "images/20251219_이호만_점장_이수정_1766138101134.jpg",
+    "fileName": "20251219_이호만_점장_이수정_1766138101134.jpg",
+    "originalFileName": "20251219_181123.jpg",
+    "uploadDate": "2025-12-19T09:55:01.483Z",
+    "fileSize": 1595101,
+    "originalWidth": 3000,
+    "originalHeight": 4000,
+    "githubImageUrl": "https://ysace0077.github.io/customer_card/images/20251219_이호만_점장_이수정_1766138101134.jpg",
+    "syncSource": "current"
+  }
+]

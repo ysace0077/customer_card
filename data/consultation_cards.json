@@ -14,22 +14,5 @@
     "originalWidth": 1979,
     "originalHeight": 2783,
     "purchaseCompleted": false
-  },
-  {
-    "id": "1766128573566",
-    "salesperson": "이호만",
-    "customerName": "조철환",
-    "consultationDate": "2025-12-19",
-    "notes": "",
-    "imageData": "https://ysace0077.github.io/customer_card/images/20251219_이호만_조철환_1766128573566.jpg",
-    "imagePath": "images/20251219_이호만_조철환_1766128573566.jpg",
-    "fileName": "20251219_이호만_조철환_1766128573566.jpg",
-    "originalFileName": "20251002_조철환.jpg",
-    "uploadDate": "2025-12-19T07:16:13.651Z",
-    "fileSize": 619373,
-    "originalWidth": 2044,
-    "originalHeight": 2865,
-    "githubImageUrl": "https://ysace0077.github.io/customer_card/images/20251219_이호만_조철환_1766128573566.jpg",
-    "purchaseCompleted": false
   }
 ]

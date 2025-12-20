@@ -1,13 +1,13 @@
 [
   {
-    "id": "1766215196463",
+    "id": "1766220223200",
     "salesperson": "김승진 실장",
-    "customerName": "정지선",
-    "consultationDate": "2025-11-26",
-    "notes": "",
-    "fileName": "20251126_김승진_실장_정지선_1766215196463.jpg",
-    "uploadDate": "2025-12-20T07:19:58.903Z",
-    "imageUrl": "https://ysace0077.github.io/customer_card/images/20251126_김승진_실장_정지선_1766215196463.jpg"
+    "customerName": "김지현",
+    "consultationDate": "2025-12-20",
+    "notes": "신혼가구 싱글 2조",
+    "fileName": "20251220_김승진_실장_김지현_1766220223200.jpg",
+    "uploadDate": "2025-12-20T08:43:45.659Z",
+    "imageUrl": "https://ysace0077.github.io/customer_card/images/20251220_김승진_실장_김지현_1766220223200.jpg"
   },
   {
     "id": "1766211597091",
@@ -38,15 +38,5 @@
     "fileName": "20251204_오희정_실장_이지희_1766202430021.jpg",
     "uploadDate": "2025-12-20T03:47:12.172Z",
     "imageUrl": "https://ysace0077.github.io/customer_card/images/20251204_오희정_실장_이지희_1766202430021.jpg"
-  },
-  {
-    "id": "1766220223200",
-    "salesperson": "김승진 실장",
-    "customerName": "김지현",
-    "consultationDate": "2025-12-20",
-    "notes": "신혼가구 싱글 2조",
-    "fileName": "20251220_김승진_실장_김지현_1766220223200.jpg",
-    "uploadDate": "2025-12-20T08:43:45.659Z",
-    "imageUrl": "https://ysace0077.github.io/customer_card/images/20251220_김승진_실장_김지현_1766220223200.jpg"
   }
 ]

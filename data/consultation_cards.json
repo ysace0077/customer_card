@@ -1,13 +1,13 @@
 [
   {
-    "id": "1766199156894",
-    "salesperson": "이호만 점장",
-    "customerName": "조철환",
+    "id": "1766200952939",
+    "salesperson": "김승진 실장",
+    "customerName": "이상민",
     "consultationDate": "2025-12-20",
     "notes": "",
-    "fileName": "20251220_이호만_점장_조철환_1766199156894.jpg",
-    "uploadDate": "2025-12-20T02:52:38.938Z",
-    "imageUrl": "https://ysace0077.github.io/customer_card/images/20251220_이호만_점장_조철환_1766199156894.jpg"
+    "fileName": "20251220_김승진_실장_이상민_1766200952939.jpg",
+    "uploadDate": "2025-12-20T03:22:35.472Z",
+    "imageUrl": "https://ysace0077.github.io/customer_card/images/20251220_김승진_실장_이상민_1766200952939.jpg"
   },
   {
     "id": "1766200861893",
@@ -18,15 +18,5 @@
     "fileName": "20251220_이호만_점장_이순자_1766200861893.jpg",
     "uploadDate": "2025-12-20T03:21:04.411Z",
     "imageUrl": "https://ysace0077.github.io/customer_card/images/20251220_이호만_점장_이순자_1766200861893.jpg"
-  },
-  {
-    "id": "1766200952939",
-    "salesperson": "김승진 실장",
-    "customerName": "이상민",
-    "consultationDate": "2025-12-20",
-    "notes": "",
-    "fileName": "20251220_김승진_실장_이상민_1766200952939.jpg",
-    "uploadDate": "2025-12-20T03:22:35.472Z",
-    "imageUrl": "https://ysace0077.github.io/customer_card/images/20251220_김승진_실장_이상민_1766200952939.jpg"
   }
 ]

@@ -1,5 +1,15 @@
 [
   {
+    "id": "1766895394839",
+    "salesperson": "이호만 점장",
+    "customerName": "쌍용",
+    "consultationDate": "2025-12-28",
+    "notes": "노벨라 트윈 2조",
+    "fileName": "20251228_이호만_점장_쌍용_1766895394839.jpg",
+    "uploadDate": "2025-12-28T04:16:37.702Z",
+    "imageUrl": "https://ysace0077.github.io/customer_card/images/20251228_이호만_점장_쌍용_1766895394839.jpg"
+  },
+  {
     "id": "1766286041368",
     "salesperson": "오희정 실장",
     "customerName": "김경록",
@@ -50,13 +60,13 @@
     "imageUrl": "https://ysace0077.github.io/customer_card/images/20251204_오희정_실장_이지희_1766202430021.jpg"
   },
   {
-    "id": "1766895394839",
-    "salesperson": "이호만 점장",
-    "customerName": "쌍용",
-    "consultationDate": "2025-12-28",
-    "notes": "노벨라 트윈 2조",
-    "fileName": "20251228_이호만_점장_쌍용_1766895394839.jpg",
-    "uploadDate": "2025-12-28T04:16:37.702Z",
-    "imageUrl": "https://ysace0077.github.io/customer_card/images/20251228_이호만_점장_쌍용_1766895394839.jpg"
+    "id": "1766988419093",
+    "salesperson": "김승진 실장",
+    "customerName": "고숙진",
+    "consultationDate": "2025-12-29",
+    "notes": "재구매건 / 섬(소경도) 배송",
+    "fileName": "20251229_김승진_실장_고숙진_1766988419093.jpg",
+    "uploadDate": "2025-12-29T06:07:12.258Z",
+    "imageUrl": "https://ysace0077.github.io/customer_card/images/20251229_김승진_실장_고숙진_1766988419093.jpg"
   }
 ]
